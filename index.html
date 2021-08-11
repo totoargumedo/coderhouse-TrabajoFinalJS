@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Roller</title>
+    <meta name="robots" content="index, follow" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/ubt8cgo.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="container-fluid headerIndex">
+      <h1>DICE ROLLER</h1>
+    </header>
+    <main class="mainIndex">
+      <!-- Jugadores -->
+      <section class="row playersSection">
+        <!-- Seleccione cantidad e indique nombres -->
+        <div class="col-4 playersCreation">
+          <h3>JUGADORES</h3>
+          <div id="playersInputs">
+            <img
+              src="images/2players.svg"
+              alt="Dos Jugadores"
+              class="playersNumber"
+              id="twoPlayer"
+            />
+            <img
+              src="images/3players.svg"
+              alt="Tres Jugadores"
+              class="playersNumber"
+              id="threePlayer"
+            />
+            <img
+              src="images/4players.svg"
+              alt="Cuatro Jugadores"
+              class="playersNumber"
+              id="fourPlayer"
+            />
+          </div>
+          <button
+            class="btn btn-danger btn-createPlayer"
+            id="createPlayerRooster"
+          >
+            CREAR
+          </button>
+        </div>
+        <!-- Resumen Jugadores -->
+        <div class="col-4 playersCreated">
+          <h3 id="playersCreated">JUGADORES</h3>
+        </div>
+        <!-- Historial de ganadores -->
+        <div class="col-4 historySection">
+          <h3>HISTORICO DE GANADORES</h3>
+          <div class="buttons">
+            <button class="btn btn-danger btn-showHistory" id="showHistory">
+              MOSTRAR
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seleccion de dado y rondas -->
+      <section class="row diceSection">
+        <div class="col-9 diceRoll">
+          <h3>Presione para seleccionar dado</h3>
+          <img src="images/dices.svg" alt="Dados" id="diceSelect" />
+        </div>
+        <div class="col-3 roundSelection" id="roundSelection">
+          <h3>RONDAS</h3>
+          <input type="number" id="roundsInput" />
+          <button class="btn btn-danger btn-createPlayer" id="roundsNumber">
+            CREAR
+          </button>
+        </div>
+      </section>
+
+      <!-- Resultados -->
+      <section class="row scoresSection">
+        <!-- Totales -->
+        <div class="col-4 roundScores" id="roundScores"></div>
+        <div class="col-4 playerScores" id="scores">
+          <h3>LOS RESULTADOS SON</h3>
+        </div>
+        <!-- Ganador/es -->
+        <div class="col-4">
+          <div class="winnerScore" id="winner">
+            <h3>!EL GANADOR ES!</h3>
+          </div>
+          <div class="winnerHistory" id="winnerHistory"></div>
+        </div>
+      </section>
+
+      <!-- Recargar -->
+      <section class="reloadSection">
+        <div class="">
+          <a href="index.html">
+            <button class="btn btn-danger">REINICIAR</button>
+          </a>
+          <button class="btn btn-danger btn-clearHistory" id="saveHistory">
+            GUARDAR GANADORES
+          </button>
+          <button class="btn btn-danger btn-clearHistory" id="clearHistory">
+            LIMPIAR HISTORICO
+          </button>
+        </div>
+      </section>
+    </main>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+  </body>
+</html>

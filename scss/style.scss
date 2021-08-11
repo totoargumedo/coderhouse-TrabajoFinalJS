@@ -1,0 +1,152 @@
+@import "colors.scss";
+@import "fonts.scss";
+@import "buttons.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.headerIndex {
+  background-color: $colorFondo2;
+  min-height: 20vh;
+  text-align: center;
+}
+
+.player {
+  background-color: $colorFondo1;
+  width: fit-content;
+  text-align: center;
+  font-family: $titulos;
+  font-weight: 700;
+}
+
+.mainIndex {
+  width: 100%;
+
+  .playersSection {
+    .playersCreation {
+      z-index: 1;
+      background-color: $colorFondo3;
+      text-align: center;
+      padding: 2vh;
+
+      .playersNumber {
+        height: 15vh;
+        display: inline-block;
+      }
+
+      .playerInput {
+        padding: 2vh;
+        display: inline-block;
+      }
+      .imgRelleno {
+        height: 25vh;
+      }
+    }
+
+    .playersCreated {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-evenly;
+      background-color: $colorFondo3;
+      padding: 2vh;
+    }
+  }
+
+  .diceSection {
+    .diceRoll {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-evenly;
+      background-color: $colorFondo2;
+      text-align: center;
+      padding: 2vh;
+
+      #diceSelect {
+        height: 20vh;
+      }
+    }
+
+    .dices {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-evenly;
+      padding: 2vh;
+      background-color: $colorFondo2;
+
+      .diceShow {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        padding: 2vh;
+
+        h5 {
+          font-family: $titulos;
+          text-align: center;
+        }
+        .dice {
+          height: 15vh;
+        }
+      }
+    }
+
+    .roundSelection {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-evenly;
+      background-color: $colorFondo3;
+      padding: 2vh;
+    }
+  }
+
+  .scoresSection {
+    .playerScores {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-evenly;
+      background-color: $colorFondo3;
+      text-align: center;
+      padding: 2vh;
+    }
+
+    .winnerScores {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-evenly;
+      background-color: $colorFondo3;
+      padding: 2vh;
+    }
+  }
+
+  .historySection {
+    background-color: $colorFondo2;
+    padding: 2vh;
+
+    h3 {
+      text-align: center;
+    }
+
+    .buttons {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-around;
+      background-color: $colorFondo2;
+      padding: 2vh;
+    }
+
+    .winnerHistory {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      text-align: left;
+    }
+  }
+
+  .reloadSection {
+    background-color: $colorFondo3;
+    padding: 2vh;
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,222 @@
+.texto {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.headerIndex {
+  background-color: #B4D2BA;
+  min-height: 20vh;
+  text-align: center;
+}
+
+.player {
+  background-color: #B57F50;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+  font-family: "Muni", sans-serif;
+  font-weight: 700;
+}
+
+.mainIndex {
+  width: 100%;
+}
+
+.mainIndex .playersSection .playersCreation {
+  z-index: 1;
+  background-color: #DCE2AA;
+  text-align: center;
+  padding: 2vh;
+}
+
+.mainIndex .playersSection .playersCreation .playersNumber {
+  height: 15vh;
+  display: inline-block;
+}
+
+.mainIndex .playersSection .playersCreation .playerInput {
+  padding: 2vh;
+  display: inline-block;
+}
+
+.mainIndex .playersSection .playersCreation .imgRelleno {
+  height: 25vh;
+}
+
+.mainIndex .playersSection .playersCreated {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #DCE2AA;
+  padding: 2vh;
+}
+
+.mainIndex .diceSection .diceRoll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #B4D2BA;
+  text-align: center;
+  padding: 2vh;
+}
+
+.mainIndex .diceSection .diceRoll #diceSelect {
+  height: 20vh;
+}
+
+.mainIndex .diceSection .dices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 2vh;
+  background-color: #B4D2BA;
+}
+
+.mainIndex .diceSection .dices .diceShow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2vh;
+}
+
+.mainIndex .diceSection .dices .diceShow h5 {
+  font-family: "Muni", sans-serif;
+  text-align: center;
+}
+
+.mainIndex .diceSection .dices .diceShow .dice {
+  height: 15vh;
+}
+
+.mainIndex .diceSection .roundSelection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #DCE2AA;
+  padding: 2vh;
+}
+
+.mainIndex .scoresSection .playerScores {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #DCE2AA;
+  text-align: center;
+  padding: 2vh;
+}
+
+.mainIndex .scoresSection .winnerScores {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #DCE2AA;
+  padding: 2vh;
+}
+
+.mainIndex .historySection {
+  background-color: #B4D2BA;
+  padding: 2vh;
+}
+
+.mainIndex .historySection h3 {
+  text-align: center;
+}
+
+.mainIndex .historySection .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #B4D2BA;
+  padding: 2vh;
+}
+
+.mainIndex .historySection .winnerHistory {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+}
+
+.mainIndex .reloadSection {
+  background-color: #DCE2AA;
+  padding: 2vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=style.css.map */
